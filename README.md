@@ -1,8 +1,8 @@
 ## Lab Home Code Sample
 
 ### Intro 
-Hi 😊 This is a code sample from my lab application's home component, which can be visited in full at https://jennychau.herokuapp.com/lab.
-The code can be viewed in full at https://github.com/jnesong/portfolio.
+Hi 😊 This is a code sample from my lab app's home component, which can be visited in full at https://jennychau.herokuapp.com/lab.
+The code can be viewed at https://github.com/jnesong/portfolio.
 This code is intended as an example for job applications and not designed for external use.
 
 ### Project Purpose
@@ -26,12 +26,22 @@ Lab App was inspired by my 4 years working as an oncology and acute care nurse. 
 
  <details>
   <summary> Line 19 </summary>
-    <p> Demonstrates the useEffect's dependency array to only pull the data for gold labs once, when the home component first renders. The array of gold labs can then be passed as a prop for children components to share. </p>
+    <p> Demonstrates the useEffect's dependency array to only pull the data for gold labs once, when the home component first renders. The array of gold labs can then be passed as a prop for children components to share rather than import LabBank to each component, which would also work. </p>
 </details>
 
  <details>
-  <summary> Lines 21-50 </summary>
-    <p> Takes the result data, which supplied through a function that is passed down via props to LabForm (line 76) and uses the sortEachLab function to  sort the entered labs into abnormal, normal, or unentered categories based on their min and max. The min and max values are key/value information from the gold labs. The labs are connected as argument pairs and through IDs, hemoglobin being 0, wbc being 1, and so on (lines 40-45). The sort occurs by adding the lab from the gold labs array to the objects abnorm, norm, and zeroes (lines 22-24) and lastly set into state to be passed to child components as arrays (lines 47-49). Objects are used here to prevent duplicate labs result entries, as objects require unique keys, so the following value will replace the older value for the same lab because they share a key. </p>
+  <summary> Lines 21-47 </summary>
+    <p> Takes the user entered result data, which is supplied through a function that is passed down via props to LabForm (line 76) and uses the sortEachLab function to  sort the entered labs into abnormal, normal, or unentered categories based on their user-submitted values. The normal range is determined by min and max values, found as key/value information from the gold labs array. The labs are connected as argument pairs and through IDs, hemoglobin being 0, wbc being 1, and so on (lines 40-45). The sort occurs by comparing the user entered lab value to the gold array's min and max info and then adding the corresponding lab from the gold labs array to the objects abnorm, norm, and zeroes (lines 22-24) and then setting states to be passed to child components as arrays (lines 47-49). Objects are used here to prevent duplicate labs result entries, as objects require unique keys, so the following value will replace the older value for the same lab because they share a key. </p>
+</details>
+
+ <details>
+  <summary> Lines 49-53 </summary>
+    <p> Fetches all past user entered lab results from the backend database, using the /api/records GET route, which connects with my Rails backend Records controller's index action. The first repsonse is parsed from JSON to javascript and then that javascript data sets the lab history state to be passed via props to children components. </p>
+</details>
+
+ <details>
+  <summary> Lines 55-65 </summary>
+    <p> The makeHistory function takes the user entered result data, which is supplied through a function that is passed down via props to LabForm (line 76) and makes a fetch request to the /api/records POST route, which connects with my Rails backend Records controller's create action. Lines 58-60 specify the data will be sent in JSON, and the javascript data is converted to JSON in line 61. After posting the data to the backend, lines 63 and 64 returns the data, parses it back from JSON into javascript and updates the lab history data to contain the newly created data. </p>
 </details>
 
 
