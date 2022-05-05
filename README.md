@@ -29,7 +29,7 @@ This code is intended as an example for job applications and not designed for ex
 
  <details>
   <summary> Line 19 </summary>
-    <p> Demonstrates the useEffect's dependency array to only pull the data for gold labs once, when the home component first renders. The array of gold labs can then be passed as a prop for children components to share rather than import LabBank to each component, which would also work. </p>
+    <p> Demonstrates the useEffect's empty dependency array to only pull the data for gold labs once, when the home component first renders. The array of gold labs can then be passed as a prop for children components to share rather than import LabBank to each component, which would also work. </p>
 </details>
 
  <details>
