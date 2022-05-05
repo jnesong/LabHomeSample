@@ -61,5 +61,6 @@ Lab App was inspired by my 4 years working as an oncology and acute care nurse. 
 </details>
 
 
+A gif of Lab App:
 
 ![lab](https://user-images.githubusercontent.com/89889344/166989301-0dfa60b7-aa4e-447b-8ccb-53ed0cad7467.gif)
