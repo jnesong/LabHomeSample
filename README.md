@@ -39,7 +39,7 @@ This code is intended as an example for job applications and not designed for ex
 
  <details>
   <summary> Lines 49-53 </summary>
-    <p> Fetches all past user entered lab results from the backend database, using the /api/records GET route, which connects with my Rails backend Records controller's index action. The first repsonse is parsed from JSON to javascript and then that javascript data sets the lab history state, to be passed via props to children components. </p>
+    <p> Fetches all past user entered lab results from the backend database, using the /api/records GET route, which connects with my Rails backend Records controller's index action. The response is parsed from JSON to javascript and then that javascript data sets the lab history state, to be passed via props to children components. </p>
 </details>
 
  <details>
