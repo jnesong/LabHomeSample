@@ -18,12 +18,12 @@ const LabHome = () => {
 
     useEffect(() => { setGoldLabs(Labs) }, []);
 
-    function makeAbnormNorm(resultData) {
+    const makeAbnormNorm = (resultData) => {
         let abnorm = {};
         let norm = {};
         let zeros = {};
 
-        function sortEachLab(labString, lab) {
+        const sortEachLab = (labString, lab) => {
             let labNum = parseFloat(labString);
             if (labNum === 0) {
                 zeros[lab.title] = lab;
@@ -52,7 +52,7 @@ const LabHome = () => {
             .then(data => setLabHistory(data))
     }, []); //end of fetch from backend
 
-    function makeHistory(resultData) {
+    const makeHistory = (resultData) => {
         fetch("/api/records", {
             method: "POST",
             headers: {
