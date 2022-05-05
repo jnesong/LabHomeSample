@@ -13,8 +13,13 @@ Lab App was inspired by my 4 years working as an oncology and acute care nurse. 
  
   <summary> Lines 1-9 </summary>
     <p> Imports React hooks and my other components utilized through this component and its children. </p>
-  <summary> Lines 11 </summary>
-    <p> Declares function component LabHome. </p>
+
+</details>
+
+ <details>
+ 
+  <summary> Line 11 </summary>
+    <p> Declares function component as LabHome. </p>
 
 </details>
 
