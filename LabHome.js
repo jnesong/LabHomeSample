@@ -8,7 +8,7 @@ import LabToPortNav from './LabToPortNav'
 //styling
 import './lab-app.css'
 
-function LabHome() {
+const LabHome = () => {
 
     const [goldLabs, setGoldLabs] = useState([]);
     const [abnormals, setAbnormals] = useState([]);
