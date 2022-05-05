@@ -14,7 +14,7 @@ This code is intended as an example for job applications and not designed for ex
 ### Code breakdown
  <details>
   <summary> Lines 1-9 </summary>
-    <p> Imports React hooks and my other components utilized through this component and its children. </p>
+    <p> Imports React hooks and my other components utilized through this component. Also imports the style sheet for this portion of my portfolio. </p>
 </details>
 
  <details>
