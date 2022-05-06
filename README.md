@@ -44,7 +44,7 @@ This code is intended as an example for job applications and not designed for ex
 
  <details>
   <summary> Lines 55-65 </summary>
-    <p> The makeHistory function takes the user entered result data, , which is supplied as an object datatype argument, through a function that is passed down via props to the LabForm component (lines 72-75) and makes a fetch request to the /api/records POST route, which connects with my Rails backend Records controller's create action. Lines 58-60 specify the data will be sent in JSON, and the javascript data is converted to JSON in line 61. After posting the data to the backend, lines 63 and 64 returns the data, parses it back from JSON into javascript and updates the lab history data to contain the newly created data, to be passed via props to children components. </p>
+    <p> The makeHistory function takes the user entered result data, , which is supplied as an object datatype argument, through a function that is passed down via props to the LabForm component (lines 72-75) and makes a fetch request to the /api/records POST route, which connects with my Rails backend Records controller's create action. Lines 58-60 specify the data will be sent in JSON, and the javascript data is converted to JSON in line 61. After posting the data to the backend, lines 63 and 64 returns the data, parses it back from JSON into javascript and updates the lab history data to contain the newly created data, to be passed via props to its children components, ultimately to the component which displays all past results for user reference. </p>
 </details>
 
  <details>
