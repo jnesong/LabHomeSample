@@ -24,7 +24,7 @@ This code is intended as an example for job applications and not designed for ex
 
  <details>
   <summary> Lines 13-17 </summary>
-    <p> Initializes state for data the user dynamically interacts with through the React Hook useState. </p>
+    <p> Initializes state for the lab data the user dynamically interacts with throughout the application, via the React Hook useState. </p>
 </details>
 
  <details>
