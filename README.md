@@ -3,7 +3,7 @@
 ### Intro 
 Hi 😊 This is a code sample from my lab app's home component, which can be visited in full at https://jennychau.herokuapp.com/lab.
 <br/>
-The entire running code can be viewed at https://github.com/jnesong/portfolio.
+The entire running project's code can be viewed at https://github.com/jnesong/portfolio.
 <br/>
 This code is intended as an example for job applications and not designed for external use.
 <br/>
